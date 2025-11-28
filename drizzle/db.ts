@@ -1,3 +1,4 @@
+import 'dotenv/config';
 // Import the Neon serverless client for PostgreSQL
 import { neon } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-http";
