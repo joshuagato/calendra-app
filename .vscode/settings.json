@@ -1,0 +1,41 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Local PG",
+            "database": "tahmo_cml",
+            "username": "postgres"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Local MS",
+            "username": "root",
+            "database": "tahmo_cml"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "Remote PG",
+            "connectString": "postgresql://neondb_owner:npg_B4IOMbiuKC8L@ep-raspy-wave-a4ajb5kr-pooler.us-east-1.aws.neon.tech/neondb"
+        }
+    ]
+}
